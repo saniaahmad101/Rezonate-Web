@@ -1,6 +1,5 @@
-/* styles.css */
+/* public/styles.css */
 :root {
-  /* Light-mode base (matches your app’s lighter vibe) */
   --bg: #F7F8FC;
 
   --card: rgba(255, 255, 255, 0.78);
@@ -10,7 +9,6 @@
   --text: rgba(15, 17, 22, 0.92);
   --muted: rgba(15, 17, 22, 0.62);
 
-  /* Rezonate theme */
   --green: #0D7C66;
   --teal: #41B3A2;
   --lav: #BDA9DB;
@@ -103,7 +101,6 @@ code {
 .brand-name { font-weight: 750; letter-spacing: 0.2px; }
 .brand-tag { font-size: 12px; color: var(--muted); margin-top: 2px; }
 
-/* Screen-reader only */
 .sr-only{
   position:absolute;
   width:1px;
@@ -460,6 +457,7 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   border: 1px solid rgba(15,17,22,0.10);
   color: rgba(15,17,22,0.90);
   font-weight: 760;
+  font-size: 14px; /* changed: smaller */
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -476,6 +474,8 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   background: rgba(13,124,102,0.06);
   border: 1px solid rgba(13,124,102,0.12);
   color: rgba(15,17,22,0.74);
+  font-size: 14px; /* changed: same size as question */
+  line-height: 1.55;
 }
 
 /* CTA */
@@ -612,56 +612,35 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   .cta { flex-direction: column; align-items: flex-start; }
 }
 
-/* --- Mobile polish / true phone-first tweaks --- */
 @media (max-width: 480px) {
   .container { padding: 0 14px; }
-
-  /* Header spacing + button sizing */
   .header-inner { min-height: 66px; }
   .brand-mark { width: 38px; height: 38px; border-radius: 12px; }
   .brand-tag { display: none; }
-
   .btn { padding: 10px 12px; font-size: 13px; border-radius: 13px; }
   .icon-btn { width: 44px; height: 40px; border-radius: 13px; }
-
-  /* Hero text sizing & spacing */
   .hero { padding: 34px 0 18px; }
   h1 { font-size: clamp(32px, 8.8vw, 44px); line-height: 1.06; }
   .lead { font-size: 15px; }
-
-  /* Phone mock: make it fit comfortably */
   .phone { width: 100%; padding: 14px; border-radius: 32px; }
   .phone-screen { border-radius: 22px; }
-
-  /* Banner + metrics stack nicer */
   .banner { padding: 16px; }
   .banner-right { grid-template-columns: 1fr; }
-
-  /* CTA stack + full width buttons */
   .cta { padding: 18px; }
   .cta-right { width: 100%; }
   .cta-right .btn { width: 100%; }
-
-  /* Orbs: reduce huge blur on small devices */
   .orb { opacity: 0.40; filter: blur(36px); }
   .orb-1, .orb-2, .orb-3 { width: 360px; height: 360px; }
-
-  /* Modal actions stack */
   .modal-actions .btn { width: 100%; }
 }
 
-/* --- Mid-size tablets: keep spacing comfy --- */
 @media (max-width: 640px) {
   .hero-grid { gap: 22px; }
   .hero-actions { gap: 8px; }
   .btn { padding: 10px 12px; }
 }
 
-/* ===========================
-   Home page mock (hero phone)
-   ONLY affects the right-side phone UI
-   =========================== */
-
+/* Home page mock */
 .phone-screen-home {
   position: relative;
   color: rgba(15, 17, 22, 0.92);
@@ -681,7 +660,6 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   min-height: 560px;
 }
 
-/* iOS-like status bar */
 .app-status{
   display:flex;
   justify-content: space-between;
@@ -774,9 +752,7 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   box-shadow: 0 16px 44px rgba(15,17,22,0.12);
 }
 
-.app-trackers {
-  padding: 10px 10px 8px;
-}
+.app-trackers { padding: 10px 10px 8px; }
 
 .trk {
   display: grid;
@@ -797,12 +773,7 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   white-space: nowrap;
 }
 
-.trk-mid {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
+.trk-mid { display: flex; align-items: center; gap: 8px; }
 .trk-emo { font-size: 16px; opacity: 0.95; }
 
 .trk-slider {
@@ -843,11 +814,7 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   transform: translateY(-1px);
 }
 
-.trk-add-row {
-  padding: 8px 0 0;
-  display: grid;
-  place-items: center;
-}
+.trk-add-row { padding: 8px 0 0; display: grid; place-items: center; }
 .trk-add {
   width: 38px;
   height: 38px;
@@ -861,7 +828,6 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   font-size: 18px;
 }
 
-/* chart header */
 .chart-head {
   margin-top: 12px;
   display: flex;
@@ -893,11 +859,7 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   color: rgba(15,17,22,0.68);
 }
 
-/* chart card */
-.chart-card {
-  position: relative;
-  padding: 10px 10px 12px;
-}
+.chart-card { position: relative; padding: 10px 10px 12px; }
 
 .chart-svg {
   width: 100%;
@@ -919,7 +881,6 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   border-radius: 12px;
 }
 
-/* bottom nav */
 .app-bottom-nav {
   position: absolute;
   left: 10px;

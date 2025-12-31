@@ -1,4 +1,4 @@
-<!-- index.html -->
+<!-- public/index.html -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#0D7C66" />
     <meta
       name="description"
-      content="Rezonate is your all-in-one mental wellness app: mood, sleep, habits, journaling, tools, RenAI, and Rez rewards."
+      content="Rezonate is your all-in-one mental wellness app: mental health tracking, sleep, habits, journaling, tools, RenAI, and Rez rewards."
     />
     <title>Rezonate • Mental Wellness, Reimagined</title>
 
@@ -24,7 +24,14 @@
     </div>
 
     <!-- Coming soon modal (no JS: uses :target) -->
-    <div id="comingSoon" class="modal" role="dialog" aria-modal="true" aria-labelledby="comingSoonTitle" aria-describedby="comingSoonDesc">
+    <div
+      id="comingSoon"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="comingSoonTitle"
+      aria-describedby="comingSoonDesc"
+    >
       <a class="modal-backdrop" href="#top" aria-label="Close"></a>
       <div class="modal-card" role="document">
         <div class="modal-top">
@@ -36,7 +43,7 @@
 
         <h2 id="comingSoonTitle">Rezonate is currently in development</h2>
         <p id="comingSoonDesc" class="muted">
-          We’re polishing the experience and preparing for launch. Thanks for your interest — availability details will be shared soon.
+          We’re polishing the experience and preparing for launch. Thanks for your interest. Availability details will be shared soon.
         </p>
 
         <div class="modal-actions">
@@ -44,9 +51,7 @@
           <a class="btn btn-ghost" href="#top">Back to top</a>
         </div>
 
-        <div class="modal-foot muted">
-          Tip: You can still browse the preview and screenshots below.
-        </div>
+        <div class="modal-foot muted">Tip: You can still browse the preview and screenshots below.</div>
       </div>
     </div>
 
@@ -117,11 +122,10 @@
             </h1>
 
             <p class="lead">
-              Track mood, sleep, habits, and journaling in one calm space. Build routines, spot patterns, and earn Rez as you stay consistent.
+              Track mental health, sleep, habits, and journaling in one space. Build routines, spot patterns, and earn Rez as you stay consistent.
             </p>
 
             <div class="hero-actions" id="download">
-              <!-- All download CTAs go to the same “Coming soon” modal -->
               <a class="btn btn-primary" href="#comingSoon" aria-label="Download on iOS">
                 <span class="btn-ico" aria-hidden="true"></span>
                 iOS
@@ -140,11 +144,11 @@
               </div>
               <div class="trust-item">
                 <div class="trust-title">All-in-one</div>
-                <div class="trust-sub">Mood • Sleep • Habits • Journal</div>
+                <div class="trust-sub">Mental health • Sleep • Habits • Other tools</div>
               </div>
               <div class="trust-item">
                 <div class="trust-title">Rez rewards</div>
-                <div class="trust-sub">Earn + level up your progress</div>
+                <div class="trust-sub">Earn for logging, lose some if you skip, and stay accountable with leaderboards</div>
               </div>
             </div>
           </div>
@@ -158,7 +162,6 @@
 
               <div class="phone-screen phone-screen-home">
                 <div class="app-home">
-                  <!-- status bar -->
                   <div class="app-status" aria-hidden="true">
                     <div class="app-time">9:41</div>
                     <div class="app-status-icons">
@@ -168,7 +171,6 @@
                     </div>
                   </div>
 
-                  <!-- top row icons -->
                   <div class="app-top-row" aria-hidden="true">
                     <div class="app-icon">
                       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -198,22 +200,18 @@
                     </div>
                   </div>
 
-                  <!-- logo -->
                   <div class="app-logo" aria-hidden="true">
                     <img src="./logo.png" alt="" />
                   </div>
 
-                  <!-- greeting/date -->
                   <div class="app-greeting">Hello, Sania</div>
                   <div class="app-date">Today • Mood + Trackers</div>
 
-                  <!-- streak pill -->
                   <div class="app-pill" aria-hidden="true">
                     <span class="app-pill-ico">🔥</span>
                     <span>5-day streak</span>
                   </div>
 
-                  <!-- trackers list -->
                   <div class="app-card app-trackers" aria-hidden="true">
                     <div class="trk">
                       <div class="trk-left">
@@ -231,7 +229,7 @@
 
                     <div class="trk">
                       <div class="trk-left">
-                        <div class="trk-label">Anxiety</div>
+                        <div class="trk-label">Focus</div>
                       </div>
                       <div class="trk-mid">
                         <span class="trk-emo">😄</span>
@@ -262,7 +260,6 @@
                     </div>
                   </div>
 
-                  <!-- chart header -->
                   <div class="chart-head" aria-hidden="true">
                     <div class="chart-tabs">
                       <span class="chart-tab is-on">Weekly</span>
@@ -276,7 +273,6 @@
                   </div>
                   <div class="chart-range" aria-hidden="true">This week</div>
 
-                  <!-- chart -->
                   <div class="app-card chart-card" aria-hidden="true">
                     <svg class="chart-svg" viewBox="0 0 300 150" preserveAspectRatio="none">
                       <g opacity="0.28">
@@ -311,7 +307,6 @@
                     <div class="chart-cta">View insights</div>
                   </div>
 
-                  <!-- bottom nav -->
                   <div class="app-bottom-nav" aria-hidden="true">
                     <div class="bn-item is-on">
                       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -366,23 +361,21 @@
       <section id="features" class="section">
         <div class="container">
           <div class="section-head">
-            <h2>Everything you want in one calm space</h2>
-            <p>
-              Built to feel supportive, modern, and easy to use — with a theme that stays consistent across the app.
-            </p>
+            <h2>Everything you want in one space</h2>
+            <p>Built to feel supportive, encouraging, and easy to use.</p>
           </div>
 
           <div class="grid-3">
             <article class="card">
               <div class="card-ico">🙂</div>
-              <h3>Mood tracking</h3>
-              <p>Quick emoji logging, trends, and insights that help you notice patterns.</p>
+              <h3>Mental health tracking</h3>
+              <p>Quick check-ins, emoji logging, and trends that help you notice patterns over time.</p>
             </article>
 
             <article class="card">
               <div class="card-ico">✅</div>
               <h3>Habit trackers</h3>
-              <p>Custom habits, streak support, and progress you can actually stick with.</p>
+              <p>Create custom habits, log consistently, and review progress over time.</p>
             </article>
 
             <article class="card">
@@ -394,41 +387,42 @@
             <article class="card">
               <div class="card-ico">📝</div>
               <h3>Journal</h3>
-              <p>Write freely with privacy-first controls — plus community options when you want them.</p>
+              <p>Write freely with privacy-first controls, plus optional community spaces when you want them.</p>
             </article>
 
             <article class="card">
               <div class="card-ico">🧰</div>
               <h3>Tools hub</h3>
-              <p>Affirmations, exercises, meditation, stress busters, and more in one place.</p>
+              <p>Affirmations, exercises, meditation, and resources in one place.</p>
             </article>
 
             <article class="card">
               <div class="card-ico">✨</div>
               <h3>RenAI</h3>
-              <p>Guided support and prompts designed to feel safe, calm, and genuinely helpful.</p>
+              <p>Guided prompts and support designed to feel safe, calm, and genuinely thoughtful.</p>
             </article>
           </div>
 
           <div class="banner">
             <div class="banner-left">
-              <div class="banner-title">Rez rewards that keep you moving</div>
+              <div class="banner-title">Rez rewards that keep you consistent</div>
               <div class="banner-sub">
-                Earn Rez for daily logs and consistency — then use Rez for boosts and in-app extras as you progress.
+                Earn Rez when you log your day and stay on track. If you miss logging, you lose some Rez to encourage consistency. Use leaderboards
+                to stay accountable, with views for all users or just friends.
               </div>
             </div>
             <div class="banner-right">
               <div class="metric">
                 <div class="metric-num">Daily</div>
-                <div class="metric-label">gentle check-ins</div>
+                <div class="metric-label">logging habit</div>
               </div>
               <div class="metric">
                 <div class="metric-num">Rez</div>
-                <div class="metric-label">earned for consistency</div>
+                <div class="metric-label">earned or lost</div>
               </div>
               <div class="metric">
-                <div class="metric-num">Tools</div>
-                <div class="metric-label">in one hub</div>
+                <div class="metric-num">Boards</div>
+                <div class="metric-label">friends or global</div>
               </div>
             </div>
           </div>
@@ -440,9 +434,7 @@
         <div class="container">
           <div class="section-head">
             <h2>Looks like a real app — because it is</h2>
-            <p>
-              Replace these placeholders with real screenshots anytime. The layout is built to showcase your UI.
-            </p>
+            <p>Replace these placeholders with real screenshots anytime. The layout is built to showcase your UI.</p>
           </div>
 
           <div class="screens">
@@ -452,7 +444,7 @@
                   <div class="shot-label">Home</div>
                 </div>
               </div>
-              <figcaption>Daily overview, quick mood log, and gentle progress cues.</figcaption>
+              <figcaption>Daily overview, quick check-ins, and gentle progress cues.</figcaption>
             </figure>
 
             <figure class="shot">
@@ -461,7 +453,7 @@
                   <div class="shot-label">Trackers</div>
                 </div>
               </div>
-              <figcaption>Habits + sleep + mood trends with a clean, iOS-style feel.</figcaption>
+              <figcaption>Habits + sleep + mental health trends with a clean, iOS-style feel.</figcaption>
             </figure>
 
             <figure class="shot">
@@ -479,7 +471,7 @@
                   <div class="shot-label">RenAI</div>
                 </div>
               </div>
-              <figcaption>Guided prompts and support, designed to feel calm and helpful.</figcaption>
+              <figcaption>Guided prompts and support, designed to feel calm and thoughtful.</figcaption>
             </figure>
           </div>
 
@@ -490,21 +482,20 @@
         </div>
       </section>
 
-      <!-- About (replaces Pricing/Plans) -->
+      <!-- About -->
       <section id="about" class="section">
         <div class="container">
           <div class="section-head">
             <h2>About Rezonate</h2>
-            <p>
-              Rezonate is built to help you track, reflect, and build healthier routines — with a calm design and a privacy-first mindset.
-            </p>
+            <p>Rezonate is built to help you track, reflect, and build healthier routines with a calm design and a privacy-first mindset.</p>
           </div>
 
           <div class="about-grid">
             <article class="about-card">
               <h3>What it helps with</h3>
               <p>
-                Use quick daily check-ins to track mood, sleep, habits, and journaling — then review patterns over time to understand what supports you.
+                Use quick daily check-ins to track mental health, sleep, habits, and journaling. Review patterns over time to understand what supports
+                you and what gets in the way.
               </p>
               <ul class="list about-list">
                 <li>Simple daily logging</li>
@@ -516,7 +507,8 @@
             <article class="about-card">
               <h3>How it’s designed</h3>
               <p>
-                The experience is intentionally uncluttered and consistent — so it feels easy to return to, even on busy or difficult days.
+                The experience is intentionally uncluttered and consistent so it feels easy to return to, even on busy days. You stay in control of
+                what you track, what you save, and what you share.
               </p>
               <ul class="list about-list">
                 <li>Calm, modern UI</li>
@@ -537,38 +529,54 @@
           </div>
 
           <div class="faq">
-            <button class="faq-q" type="button" aria-expanded="false">
-              Will this website mess with my app if it’s on the same Firebase project?
+            <button class="faq-q" type="button" aria-expanded="true">
+              What can I track in the app?
               <span class="chev" aria-hidden="true">⌄</span>
             </button>
-            <div class="faq-a" hidden>
-              No. Firebase Hosting is separate from your app’s Firestore/Auth/Storage. As long as you deploy with
-              <code>firebase deploy --only hosting</code>, you’re only updating website files.
+            <div class="faq-a">
+              You can track mental health check-ins, sleep, habits, and journaling in one place. Trackers are designed to be quick and easy, so you can
+              log in seconds and still get meaningful trends over time. In the tools hub, you can also explore supportive features like affirmations,
+              exercises, meditation, and curated resources that help you build routines and stay grounded.
             </div>
 
             <button class="faq-q" type="button" aria-expanded="false">
-              When will Rezonate be available?
+              How do Rez rewards and leaderboards work?
               <span class="chev" aria-hidden="true">⌄</span>
             </button>
             <div class="faq-a" hidden>
-              Rezonate is currently in development. Launch timing will be shared as soon as we’re ready to publish on iOS and Android.
+              Rez is a consistency reward system that makes tracking more motivating. You earn Rez when you complete daily logging, and you lose some Rez
+              if you miss logging. This creates gentle accountability without being harsh. You can view leaderboards to track your progress, either
+              globally with all users or in a friends-only view for a more personal accountability circle.
             </div>
 
             <button class="faq-q" type="button" aria-expanded="false">
-              Can I add my custom domain later?
+              Can I customize my trackers and habits?
               <span class="chev" aria-hidden="true">⌄</span>
             </button>
             <div class="faq-a" hidden>
-              Yes. In Firebase Console → Hosting → “Add custom domain”, then follow the DNS instructions it provides.
+              Yes. Rezonate is built to be flexible so you can track what actually matters to you. You can personalize your habits and daily check-ins,
+              adjust what you focus on, and keep your space organized around your goals. The goal is to make tracking feel simple and repeatable, so it
+              fits into real life and not just “perfect days.”
             </div>
 
             <button class="faq-q" type="button" aria-expanded="false">
-              How do I add real screenshots?
+              Is my journaling private?
               <span class="chev" aria-hidden="true">⌄</span>
             </button>
             <div class="faq-a" hidden>
-              Export screenshots from your app, copy them into <code>public/</code>, and update the “Screens” section to use
-              <code>&lt;img&gt;</code> tags. If you send me the screenshots, I’ll wire them in cleanly and responsively.
+              Your journal is designed with privacy in mind. Your entries are meant to be for you first, with controls that help you keep your writing
+              personal and secure. If you choose to use community features, you decide what to share and when. Rezonate is built so privacy is the
+              default, not an afterthought.
+            </div>
+
+            <button class="faq-q" type="button" aria-expanded="false">
+              Does Rezonate replace professional support?
+              <span class="chev" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-a" hidden>
+              No. Rezonate is a self-guided wellness and tracking app, not a medical or clinical service. It can help you build awareness, routines, and
+              consistency, but it does not diagnose, treat, or replace care from qualified professionals. If you are in crisis or need urgent help,
+              contact local emergency services or a trusted crisis resource in your area.
             </div>
           </div>
         </div>
@@ -578,7 +586,7 @@
       <section class="section section-cta">
         <div class="container cta">
           <div class="cta-left">
-            <h2>Ready to feel more in control — one day at a time?</h2>
+            <h2>Ready to feel more in control, one day at a time?</h2>
             <p class="lead-sm">Rezonate is coming soon. In the meantime, explore the preview and see what’s being built.</p>
           </div>
           <div class="cta-right">
@@ -600,9 +608,7 @@
               <span class="brand-tag">Mental wellness, reimagined.</span>
             </span>
           </div>
-          <p class="muted">
-            © <span id="year"></span> Rezonate. All rights reserved.
-          </p>
+          <p class="muted">© <span id="year"></span> Rezonate. All rights reserved.</p>
         </div>
 
         <div class="footer-links">
