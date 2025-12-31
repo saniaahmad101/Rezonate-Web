@@ -1,0 +1,635 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0D7C66" />
+    <meta
+      name="description"
+      content="Rezonate is your all-in-one mental wellness app: mood, sleep, habits, journaling, tools, RenAI, and Rez rewards."
+    />
+    <title>Rezonate • Mental Wellness, Reimagined</title>
+
+    <link rel="preload" href="./styles.css" as="style" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- Background -->
+    <div class="bg-orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Coming soon modal (no JS: uses :target) -->
+    <div id="comingSoon" class="modal" role="dialog" aria-modal="true" aria-labelledby="comingSoonTitle" aria-describedby="comingSoonDesc">
+      <a class="modal-backdrop" href="#top" aria-label="Close"></a>
+      <div class="modal-card" role="document">
+        <div class="modal-top">
+          <div class="modal-mark" aria-hidden="true">
+            <img src="./logo.png" alt="" />
+          </div>
+          <a class="modal-close" href="#top" aria-label="Close">✕</a>
+        </div>
+
+        <h2 id="comingSoonTitle">Rezonate is currently in development</h2>
+        <p id="comingSoonDesc" class="muted">
+          We’re polishing the experience and preparing for launch. Thanks for your interest — availability details will be shared soon.
+        </p>
+
+        <div class="modal-actions">
+          <a class="btn btn-primary" href="#features">Explore features</a>
+          <a class="btn btn-ghost" href="#top">Back to top</a>
+        </div>
+
+        <div class="modal-foot muted">
+          Tip: You can still browse the preview and screenshots below.
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Rezonate home">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="./logo.png" alt="Rezonate" />
+          </span>
+          <span class="brand-text">
+            <span class="brand-name sr-only">Rezonate</span>
+            <span class="brand-tag">Your space to track, reflect, and grow</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#features">Features</a>
+          <a href="#screens">Sneak Peak</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn-ghost" href="#about">About</a>
+          <a class="btn btn-primary" href="#comingSoon">Get the app</a>
+
+          <button
+            class="icon-btn burger"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="mobile-menu" hidden>
+        <div class="container mobile-menu-inner">
+          <a href="#features">Features</a>
+          <a href="#screens">Sneak Peak</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <div class="mobile-menu-cta">
+            <a class="btn btn-ghost" href="#about">About</a>
+            <a class="btn btn-primary" href="#comingSoon">Get the app</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="pill">
+              <span class="dot"></span>
+              <span>Coming Soon</span>
+            </div>
+
+            <h1>
+              Mental wellness,
+              <span class="grad">reimagined</span>.
+            </h1>
+
+            <p class="lead">
+              Track mood, sleep, habits, and journaling in one calm space. Build routines, spot patterns, and earn Rez as you stay consistent.
+            </p>
+
+            <div class="hero-actions" id="download">
+              <!-- All download CTAs go to the same “Coming soon” modal -->
+              <a class="btn btn-primary" href="#comingSoon" aria-label="Download on iOS">
+                <span class="btn-ico" aria-hidden="true"></span>
+                iOS
+              </a>
+              <a class="btn btn-secondary" href="#comingSoon" aria-label="Download on Android">
+                <span class="btn-ico" aria-hidden="true">▶</span>
+                Android
+              </a>
+              <a class="btn btn-ghost" href="#screens">See how it looks</a>
+            </div>
+
+            <div class="trust-row">
+              <div class="trust-item">
+                <div class="trust-title">Private-first</div>
+                <div class="trust-sub">Designed for safety & control</div>
+              </div>
+              <div class="trust-item">
+                <div class="trust-title">All-in-one</div>
+                <div class="trust-sub">Mood • Sleep • Habits • Journal</div>
+              </div>
+              <div class="trust-item">
+                <div class="trust-title">Rez rewards</div>
+                <div class="trust-sub">Earn + level up your progress</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right-side phone/mockup -->
+          <div class="hero-visual" aria-label="App preview">
+            <div class="phone">
+              <div class="phone-top">
+                <span class="cam"></span>
+              </div>
+
+              <div class="phone-screen phone-screen-home">
+                <div class="app-home">
+                  <!-- status bar -->
+                  <div class="app-status" aria-hidden="true">
+                    <div class="app-time">9:41</div>
+                    <div class="app-status-icons">
+                      <span class="sig">▮▮▮</span>
+                      <span class="wifi">⌁</span>
+                      <span class="bat">▰</span>
+                    </div>
+                  </div>
+
+                  <!-- top row icons -->
+                  <div class="app-top-row" aria-hidden="true">
+                    <div class="app-icon">
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path
+                          d="M8.7 3.2 4.2 5.9c-.7.4-1.2 1.2-1.2 2v8.2c0 .8.5 1.6 1.2 2l4.5 2.7c.8.5 1.8.5 2.6 0l4.5-2.7c.7-.4 1.2-1.2 1.2-2V7.9c0-.8-.5-1.6-1.2-2L11.3 3.2c-.8-.5-1.8-.5-2.6 0Z"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+
+                    <div class="app-icon">
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path
+                          d="M12 12a4.1 4.1 0 1 0-4.1-4.1A4.1 4.1 0 0 0 12 12Z"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                        />
+                        <path
+                          d="M4.8 20.2c1.6-3.4 4.2-5.1 7.2-5.1s5.6 1.7 7.2 5.1"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- logo -->
+                  <div class="app-logo" aria-hidden="true">
+                    <img src="./logo.png" alt="" />
+                  </div>
+
+                  <!-- greeting/date -->
+                  <div class="app-greeting">Hello, Sania</div>
+                  <div class="app-date">Today • Mood + Trackers</div>
+
+                  <!-- streak pill -->
+                  <div class="app-pill" aria-hidden="true">
+                    <span class="app-pill-ico">🔥</span>
+                    <span>5-day streak</span>
+                  </div>
+
+                  <!-- trackers list -->
+                  <div class="app-card app-trackers" aria-hidden="true">
+                    <div class="trk">
+                      <div class="trk-left">
+                        <div class="trk-label">Mood</div>
+                      </div>
+                      <div class="trk-mid">
+                        <span class="trk-emo">😄</span>
+                        <div class="trk-slider" style="--p: 52%">
+                          <span class="trk-thumb"></span>
+                        </div>
+                        <span class="trk-emo">😭</span>
+                      </div>
+                      <div class="trk-menu">⋮</div>
+                    </div>
+
+                    <div class="trk">
+                      <div class="trk-left">
+                        <div class="trk-label">Anxiety</div>
+                      </div>
+                      <div class="trk-mid">
+                        <span class="trk-emo">😄</span>
+                        <div class="trk-slider" style="--p: 38%">
+                          <span class="trk-thumb"></span>
+                        </div>
+                        <span class="trk-emo">😭</span>
+                      </div>
+                      <div class="trk-menu">⋮</div>
+                    </div>
+
+                    <div class="trk">
+                      <div class="trk-left">
+                        <div class="trk-label">Energy</div>
+                      </div>
+                      <div class="trk-mid">
+                        <span class="trk-emo">😄</span>
+                        <div class="trk-slider" style="--p: 64%">
+                          <span class="trk-thumb"></span>
+                        </div>
+                        <span class="trk-emo">😭</span>
+                      </div>
+                      <div class="trk-menu">⋮</div>
+                    </div>
+
+                    <div class="trk-add-row">
+                      <div class="trk-add">＋</div>
+                    </div>
+                  </div>
+
+                  <!-- chart header -->
+                  <div class="chart-head" aria-hidden="true">
+                    <div class="chart-tabs">
+                      <span class="chart-tab is-on">Weekly</span>
+                      <span class="chart-tab">Monthly</span>
+                      <span class="chart-tab">Overall</span>
+                    </div>
+                    <div class="chart-actions">
+                      <span class="chart-ico">🙂</span>
+                      <span class="chart-ico">⌄</span>
+                    </div>
+                  </div>
+                  <div class="chart-range" aria-hidden="true">This week</div>
+
+                  <!-- chart -->
+                  <div class="app-card chart-card" aria-hidden="true">
+                    <svg class="chart-svg" viewBox="0 0 300 150" preserveAspectRatio="none">
+                      <g opacity="0.28">
+                        <line x1="0" y1="25" x2="300" y2="25" stroke="currentColor" stroke-width="1" />
+                        <line x1="0" y1="75" x2="300" y2="75" stroke="currentColor" stroke-width="1" />
+                        <line x1="0" y1="125" x2="300" y2="125" stroke="currentColor" stroke-width="1" />
+                      </g>
+
+                      <path
+                        d="M10,105 C50,90 70,40 110,55 C150,70 170,35 210,45 C250,55 270,40 290,50"
+                        fill="none"
+                        stroke="rgba(13,124,102,0.92)"
+                        stroke-width="3.2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M10,85 C45,95 80,80 110,90 C150,105 175,85 210,95 C245,105 270,90 290,110"
+                        fill="none"
+                        stroke="rgba(65,179,162,0.88)"
+                        stroke-width="3.2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M10,120 C55,130 75,105 110,110 C150,115 175,95 210,100 C245,105 265,80 290,92"
+                        fill="none"
+                        stroke="rgba(189,169,219,0.92)"
+                        stroke-width="3.2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+
+                    <div class="chart-cta">View insights</div>
+                  </div>
+
+                  <!-- bottom nav -->
+                  <div class="app-bottom-nav" aria-hidden="true">
+                    <div class="bn-item is-on">
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path
+                          d="M4 10.8 12 4l8 6.8V20a1.5 1.5 0 0 1-1.5 1.5H5.5A1.5 1.5 0 0 1 4 20v-9.2Z"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="bn-item">
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path
+                          d="M5 5h6v6H5V5Zm8 0h6v6h-6V5ZM5 13h6v6H5v-6Zm8 0h6v6h-6v-6Z"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="bn-item">
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path
+                          d="M6 20V10m6 10V4m6 16v-7"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="phone-bottom"></div>
+            </div>
+
+            <div class="floating-tag floating-tag-1">
+              <span class="spark" aria-hidden="true">✦</span>
+              Clear insights across your trackers
+            </div>
+            <div class="floating-tag floating-tag-2">
+              <span class="spark" aria-hidden="true">✦</span>
+              Rez rewards for staying consistent
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Everything you want in one calm space</h2>
+            <p>
+              Built to feel supportive, modern, and easy to use — with a theme that stays consistent across the app.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card">
+              <div class="card-ico">🙂</div>
+              <h3>Mood tracking</h3>
+              <p>Quick emoji logging, trends, and insights that help you notice patterns.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-ico">✅</div>
+              <h3>Habit trackers</h3>
+              <p>Custom habits, streak support, and progress you can actually stick with.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-ico">🌙</div>
+              <h3>Sleep logging</h3>
+              <p>Capture sleep quality, habits & environment, and see what changes help most.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-ico">📝</div>
+              <h3>Journal</h3>
+              <p>Write freely with privacy-first controls — plus community options when you want them.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-ico">🧰</div>
+              <h3>Tools hub</h3>
+              <p>Affirmations, exercises, meditation, stress busters, and more in one place.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-ico">✨</div>
+              <h3>RenAI</h3>
+              <p>Guided support and prompts designed to feel safe, calm, and genuinely helpful.</p>
+            </article>
+          </div>
+
+          <div class="banner">
+            <div class="banner-left">
+              <div class="banner-title">Rez rewards that keep you moving</div>
+              <div class="banner-sub">
+                Earn Rez for daily logs and consistency — then use Rez for boosts and in-app extras as you progress.
+              </div>
+            </div>
+            <div class="banner-right">
+              <div class="metric">
+                <div class="metric-num">Daily</div>
+                <div class="metric-label">gentle check-ins</div>
+              </div>
+              <div class="metric">
+                <div class="metric-num">Rez</div>
+                <div class="metric-label">earned for consistency</div>
+              </div>
+              <div class="metric">
+                <div class="metric-num">Tools</div>
+                <div class="metric-label">in one hub</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screens -->
+      <section id="screens" class="section section-soft">
+        <div class="container">
+          <div class="section-head">
+            <h2>Looks like a real app — because it is</h2>
+            <p>
+              Replace these placeholders with real screenshots anytime. The layout is built to showcase your UI.
+            </p>
+          </div>
+
+          <div class="screens">
+            <figure class="shot">
+              <div class="shot-frame">
+                <div class="shot-placeholder shot-a">
+                  <div class="shot-label">Home</div>
+                </div>
+              </div>
+              <figcaption>Daily overview, quick mood log, and gentle progress cues.</figcaption>
+            </figure>
+
+            <figure class="shot">
+              <div class="shot-frame">
+                <div class="shot-placeholder shot-b">
+                  <div class="shot-label">Trackers</div>
+                </div>
+              </div>
+              <figcaption>Habits + sleep + mood trends with a clean, iOS-style feel.</figcaption>
+            </figure>
+
+            <figure class="shot">
+              <div class="shot-frame">
+                <div class="shot-placeholder shot-c">
+                  <div class="shot-label">Journal</div>
+                </div>
+              </div>
+              <figcaption>Private-first journaling with community options when you want them.</figcaption>
+            </figure>
+
+            <figure class="shot">
+              <div class="shot-frame">
+                <div class="shot-placeholder shot-d">
+                  <div class="shot-label">RenAI</div>
+                </div>
+              </div>
+              <figcaption>Guided prompts and support, designed to feel calm and helpful.</figcaption>
+            </figure>
+          </div>
+
+          <div class="note">
+            <strong>Want real screenshots?</strong>
+            Export 4–8 app screenshots and drop them into <code>public/</code>, then I’ll wire them in perfectly.
+          </div>
+        </div>
+      </section>
+
+      <!-- About (replaces Pricing/Plans) -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>About Rezonate</h2>
+            <p>
+              Rezonate is built to help you track, reflect, and build healthier routines — with a calm design and a privacy-first mindset.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="about-card">
+              <h3>What it helps with</h3>
+              <p>
+                Use quick daily check-ins to track mood, sleep, habits, and journaling — then review patterns over time to understand what supports you.
+              </p>
+              <ul class="list about-list">
+                <li>Simple daily logging</li>
+                <li>Trends you can review over time</li>
+                <li>Supportive tools in one place</li>
+              </ul>
+            </article>
+
+            <article class="about-card">
+              <h3>How it’s designed</h3>
+              <p>
+                The experience is intentionally uncluttered and consistent — so it feels easy to return to, even on busy or difficult days.
+              </p>
+              <ul class="list about-list">
+                <li>Calm, modern UI</li>
+                <li>Private-first controls</li>
+                <li>Progress that feels encouraging</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>FAQ</h2>
+            <p>Quick answers to common questions.</p>
+          </div>
+
+          <div class="faq">
+            <button class="faq-q" type="button" aria-expanded="false">
+              Will this website mess with my app if it’s on the same Firebase project?
+              <span class="chev" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-a" hidden>
+              No. Firebase Hosting is separate from your app’s Firestore/Auth/Storage. As long as you deploy with
+              <code>firebase deploy --only hosting</code>, you’re only updating website files.
+            </div>
+
+            <button class="faq-q" type="button" aria-expanded="false">
+              When will Rezonate be available?
+              <span class="chev" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-a" hidden>
+              Rezonate is currently in development. Launch timing will be shared as soon as we’re ready to publish on iOS and Android.
+            </div>
+
+            <button class="faq-q" type="button" aria-expanded="false">
+              Can I add my custom domain later?
+              <span class="chev" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-a" hidden>
+              Yes. In Firebase Console → Hosting → “Add custom domain”, then follow the DNS instructions it provides.
+            </div>
+
+            <button class="faq-q" type="button" aria-expanded="false">
+              How do I add real screenshots?
+              <span class="chev" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-a" hidden>
+              Export screenshots from your app, copy them into <code>public/</code>, and update the “Screens” section to use
+              <code>&lt;img&gt;</code> tags. If you send me the screenshots, I’ll wire them in cleanly and responsively.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="section section-cta">
+        <div class="container cta">
+          <div class="cta-left">
+            <h2>Ready to feel more in control — one day at a time?</h2>
+            <p class="lead-sm">Rezonate is coming soon. In the meantime, explore the preview and see what’s being built.</p>
+          </div>
+          <div class="cta-right">
+            <a class="btn btn-primary" href="#comingSoon" aria-label="Download on iOS">Download iOS</a>
+            <a class="btn btn-secondary" href="#comingSoon" aria-label="Download on Android">Download Android</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="brand brand-footer">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">
+              <span class="brand-name">Rezonate</span>
+              <span class="brand-tag">Mental wellness, reimagined.</span>
+            </span>
+          </div>
+          <p class="muted">
+            © <span id="year"></span> Rezonate. All rights reserved.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <div class="footer-title">Product</div>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#screens">Screens</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-title">Support</div>
+            <a href="#faq">FAQ</a>
+            <a href="#" onclick="return false;">Privacy</a>
+            <a href="#" onclick="return false;">Terms</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-title">Contact</div>
+            <a href="mailto:hello@rezonate.app">hello@rezonate.app</a>
+            <a href="#" onclick="return false;">Instagram</a>
+            <a href="#" onclick="return false;">X</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
