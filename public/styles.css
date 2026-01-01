@@ -360,7 +360,7 @@ h1 {
 .metric-num { font-weight: 900; font-size: 18px; color: rgba(15,17,22,0.88); }
 .metric-label { font-size: 11px; color: rgba(15,17,22,0.64); margin-top: 4px; }
 
-/* Screens */
+/* Screens (kept, even though section removed, to avoid “changing anything else”) */
 .screens {
   margin-top: 22px;
   display: grid;
@@ -457,7 +457,7 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   border: 1px solid rgba(15,17,22,0.10);
   color: rgba(15,17,22,0.90);
   font-weight: 760;
-  font-size: 14px; /* changed: smaller */
+  font-size: 14px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -474,7 +474,7 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   background: rgba(13,124,102,0.06);
   border: 1px solid rgba(13,124,102,0.12);
   color: rgba(15,17,22,0.74);
-  font-size: 14px; /* changed: same size as question */
+  font-size: 14px;
   line-height: 1.55;
 }
 
@@ -914,3 +914,47 @@ figcaption { margin-top: 10px; color: rgba(15,17,22,0.66); font-size: 12px; }
   box-shadow: 0 12px 28px rgba(15,17,22,0.18);
   opacity: 1;
 }
+
+/* Legal pages */
+.legal { max-width: 920px; }
+.legal-sub { margin-top: 10px; color: rgba(15,17,22,0.68); max-width: 78ch; }
+.dot-sep { padding: 0 8px; opacity: 0.75; }
+
+.legal-card{
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.86);
+  border: 1px solid rgba(15,17,22,0.10);
+  box-shadow: 0 20px 70px rgba(15,17,22,0.10);
+}
+
+.legal-card h3{
+  margin: 16px 0 8px;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+}
+.legal-card h3:first-child{ margin-top: 0; }
+
+.legal-card h4{
+  margin: 12px 0 6px;
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  color: rgba(15,17,22,0.86);
+}
+
+.legal-card p{
+  margin: 0 0 10px;
+  color: rgba(15,17,22,0.70);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.legal-list{
+  margin: 10px 0 14px;
+  padding-left: 18px;
+  color: rgba(15,17,22,0.70);
+  font-size: 13px;
+  line-height: 1.65;
+}
+.legal-list li{ margin: 6px 0; }
